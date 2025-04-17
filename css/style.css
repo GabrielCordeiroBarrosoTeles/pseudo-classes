@@ -105,3 +105,42 @@ code {
 }
 #prev { left: 1rem; }
 #next { right: 1rem; }
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .slide-container {
+    padding: 1rem;
+  }
+
+  h1, h2 {
+    font-size: 4rem;
+  }
+
+  p, ul {
+    font-size: 2rem;
+  }
+
+  pre {
+    font-size: 1.5rem;
+  }
+
+  .arrow-btn {
+    font-size: 3rem;
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1, h2 {
+    font-size: 3rem;
+  }
+
+  p, ul {
+    font-size: 1.5rem;
+  }
+
+  .arrow-btn {
+    font-size: 2rem;
+    padding: 0.3rem;
+  }
+}
