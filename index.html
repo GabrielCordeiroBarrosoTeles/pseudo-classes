@@ -12,18 +12,16 @@
 </head>
 <body>
   <div class="slide-container">
-    <!-- Navegação -->
     <button id="prev" class="arrow-btn" aria-label="Anterior">&#10094;</button>
     <button id="next" class="arrow-btn" aria-label="Próximo">&#10095;</button>
 
-    <!-- Slides -->
     <div class="slide active" id="slide-1">
       <h1>Pseudo-classes em CSS</h1>
       <p>Introdução: o que são, para que servem e exemplos práticos.</p>
     </div>
     <div class="slide" id="slide-2">
       <h2>O que são pseudo-classes?</h2>
-      <p>Palavras-chave anexadas a seletores que estilizam elementos em estados ou condições específicas, sem classes extras no HTML.</p>
+      <p><code>Pseudo-classes</code> são palavras-chave anexadas a seletores que aplicam estilos com base em estados ou condições, sem alterar o HTML.</p>
     </div>
     <div class="slide" id="slide-3">
       <h2>Para que servem?</h2>
@@ -43,24 +41,47 @@
     </div>
     <div class="slide" id="slide-5">
       <h2>Exemplo: Hover em links</h2>
-      <pre><code>a { color: #0366d6; text-decoration: none; }
-a:hover { text-decoration: underline; }</code></pre>
+      <pre><code>a {
+  color: #0366d6;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}</code></pre>
     </div>
     <div class="slide" id="slide-6">
       <h2>Exemplo: Foco em campo</h2>
-      <pre><code>input { border: 1px solid #ccc; padding: 0.5em; transition: border-color 0.2s; }
-input:focus { border-color: #007acc; outline: none; }</code></pre>
+      <pre><code>input {
+  border: 1px solid #ccc;
+  padding: 0.5em;
+  transition: border-color 0.2s;
+}
+input:focus {
+  border-color: #007acc;
+  outline: none;
+}</code></pre>
     </div>
     <div class="slide" id="slide-7">
       <h2>Exemplo: Listrando tabela</h2>
-      <pre><code>tr:nth-child(even) { background-color: rgba(0,0,0,0.05); }</code></pre>
+      <pre><code>tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.05);
+}</code></pre>
     </div>
     <div class="slide" id="slide-8">
       <h2>Exemplo: Posição e condições</h2>
-      <pre><code>.card:first-child { margin-left: 0; }
-.card:last-child { margin-right: 0; }
-input:not([type="submit"]) { background: #eef; }
-button:disabled { opacity: 0.5; cursor: not-allowed; }</code></pre>
+      <pre><code>.card:first-child {
+  margin-left: 0;
+}
+.card:last-child {
+  margin-right: 0;
+}
+input:not([type="submit"]) {
+  background: #eef;
+}
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}</code></pre>
     </div>
     <div class="slide" id="slide-9">
       <h2>Pseudo-classes comuns</h2>
@@ -71,10 +92,20 @@ button:disabled { opacity: 0.5; cursor: not-allowed; }</code></pre>
       </ul>
     </div>
     <div class="slide" id="slide-10">
-      <h2>Obrigado!</h2>
-      <p>Qualquer dúvida, estou à disposição.</p>
+        <h2>Obrigado!</h2>
+        <p>Qualquer dúvida, estou à disposição.</p>
+        <div class="d-flex justify-content-center gap-5 mt-4">
+          <div class="text-center">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://github.com/GabrielCordeiroBarrosoTeles&size=200x200" alt="QR Code GitHub Gabriel" class="img-fluid">
+            <div class="mt-2"><i class="fab fa-github fa-lg me-2"></i>GitHub</div>
+          </div>
+          <div class="text-center">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://www.linkedin.com/in/gabriel-cordeiro-barroso&size=200x200" alt="QR Code LinkedIn Gabriel" class="img-fluid">
+            <div class="mt-2"><i class="fab fa-linkedin fa-lg me-2"></i>LinkedIn</div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
 
   <script src="js/script.js"></script>
 </body>
