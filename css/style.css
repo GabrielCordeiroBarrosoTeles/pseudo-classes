@@ -1,0 +1,89 @@
+    /* Reset básico */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body {
+      height: 100%;
+      width: 100%;
+      background-color: #ffffff;
+      overflow: hidden;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      color: #333333;
+    }
+    .slide-container {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      background-color: #f8f9fa;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .slide {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      padding: 2rem;
+      overflow-y: auto;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .slide.active {
+      opacity: 1;
+      position: relative;
+    }
+    h1, h2 {
+      color: #0d6efd;
+      margin-bottom: 1rem;
+    }
+    p, ul {
+      font-size: 1rem;
+      line-height: 1.5;
+      margin-bottom: 1rem;
+    }
+    ul { list-style: none; padding-left: 0; }
+    ul li::before {
+      content: '•';
+      color: #0d6efd;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+    pre {
+      background: #e9ecef;
+      padding: 1rem;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      max-width: 90%;
+      overflow-x: auto;
+    }
+    .arrow-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(13,110,253,0.1);
+      border: none;
+      font-size: 2.5rem;
+      color: #0d6efd;
+      cursor: pointer;
+      padding: 0.5rem;
+      border-radius: 50%;
+      transition: background-color 0.3s, color 0.3s;
+      z-index: 1000;
+    }
+    .arrow-btn:hover {
+      background-color: rgba(13,110,253,0.2);
+      color: #084298;
+    }
+    .arrow-btn:disabled {
+      color: rgba(13,110,253,0.3);
+      cursor: default;
+      background-color: transparent;
+    }
+    #prev { left: 1rem; }
+    #next { right: 1rem; }
