@@ -144,3 +144,30 @@ code {
     padding: 0.3rem;
   }
 }
+
+/* Ajuste adicional para responsividade */
+@media (max-width: 1024px) {
+  .slide-container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .slide {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 320px) {
+  h1, h2 {
+    font-size: 2rem;
+  }
+
+  p, ul {
+    font-size: 1rem;
+  }
+
+  .arrow-btn {
+    font-size: 1.5rem;
+    padding: 0.2rem;
+  }
+}
